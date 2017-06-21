@@ -1,0 +1,77 @@
+PARAMETERS
+(
+	min_Takte_int = min_Takte -- f_S_max = 20 kHz bei 80 MHz-clock
+);
+CONSTANT CNT_width = CEIL(LOG2(min_TAKTE_int+1));
+SUBDESIGN f_S_Ueberwachung
+(
+	clk			: INPUT;
+	reset		: INPUT = VCC; 
+	SZW			: INPUT;
+	Freigabe	: INPUT;
+
+	f_S_Fehler	: OUTPUT;
+)   
+
+VARIABLE
+	SZW_DFF					: DFF;
+	Freigabe_DFF			: DFF;
+	
+	f_S_CNT[CNT_width-1..0]	: DFFE;
+	f_S_reset				: NODE;
+	f_S_ena					: NODE;
+	Zeit_laeuft				: NODE;
+	
+    Zustand					: MACHINE WITH STATES (Z_aus, Z_start, Z_SZW_low, Z_SZW_high, Z_reset_CNT, Z_f_S_Fehler);
+                        
+BEGIN
+	-- Eingangs-Flipflops
+	SZW_DFF.d = SZW;
+	Freigabe_DFF.d = Freigabe;
+	
+	SZW_DFF.clk = clk;
+	Freigabe_DFF.clk = clk;
+
+	-- zus�tzlich zu Zustandsautomat: Z�hler zur �berwachung der Schaltfrequenz
+	f_S_CNT[].d = f_S_CNT[].q + 1;
+	f_S_CNT[].clk = clk;
+	f_S_CNT[].ena = f_S_ena;
+	f_S_CNT[].clrn = !f_S_reset;
+	Zeit_laeuft = (f_S_CNT[].q < min_Takte_int);
+	f_S_ena = ((Zustand == Z_SZW_low) OR (Zustand == Z_SZW_high)) AND (Zeit_laeuft);
+	f_S_reset = (Zustand == Z_reset_CNT);
+	f_S_Fehler = (Zustand == Z_f_S_Fehler);
+	
+	-- Zustandsautomat
+	Zustand.clk = clk;
+	Zustand.reset = reset;
+
+	TABLE
+		Zustand,		Freigabe_DFF, SZW_DFF, Zeit_laeuft	=> zustand;
+    
+		Z_aus,			0, x, x => Z_aus;
+		Z_aus,			1, 1, x => Z_Start;
+		Z_aus,			1, 0, x => Z_aus;
+		
+		Z_Start,		0, x, x => Z_aus;
+		Z_Start,		1, 0, x => Z_SZW_low;
+		Z_Start,		1, 1, x => Z_Start;
+		
+		Z_SZW_low,		0, x, x => Z_aus;
+		Z_SZW_low,		1, 0, x => Z_SZW_low;
+		Z_SZW_low,		1, 1, x => Z_SZW_high;
+		
+		Z_SZW_high,		0, x, x => Z_aus;
+		Z_SZW_high,		1, 1, x => Z_SZW_high;
+		Z_SZW_high, 	1, 0, 0 => Z_reset_CNT;
+		Z_SZW_high, 	1, 0, 1 => Z_f_S_Fehler;
+		
+		Z_reset_CNT,	0, x, x => Z_aus;
+		Z_reset_CNT,	1, x, x => Z_SZW_low;
+		
+		Z_f_S_Fehler,	1, x, x => Z_f_S_Fehler;
+		Z_f_S_Fehler,	0, x, x => Z_aus;
+
+   END TABLE;
+END;
+

@@ -1,0 +1,27 @@
+
+State Machine - |Teamarbeit_Vorlage|f_S_Fehler:inst25|f_S_Ueberwachung:inst|Zustand
+Name Z_f_S_Fehler Z_reset_CNT Z_SZW_high Z_SZW_low Z_start Z_aus 
+Z_aus 0 0 0 0 0 0 
+Z_start 0 0 0 0 1 1 
+Z_SZW_low 0 0 0 1 0 1 
+Z_SZW_high 0 0 1 0 0 1 
+Z_reset_CNT 0 1 0 0 0 1 
+Z_f_S_Fehler 1 0 0 0 0 1 
+
+State Machine - |Teamarbeit_Vorlage|f_S_Fehler:inst25|f_S_Ueberwachung:inst1|Zustand
+Name Z_f_S_Fehler Z_reset_CNT Z_SZW_high Z_SZW_low Z_start Z_aus 
+Z_aus 0 0 0 0 0 0 
+Z_start 0 0 0 0 1 1 
+Z_SZW_low 0 0 0 1 0 1 
+Z_SZW_high 0 0 1 0 0 1 
+Z_reset_CNT 0 1 0 0 0 1 
+Z_f_S_Fehler 1 0 0 0 0 1 
+
+State Machine - |Teamarbeit_Vorlage|f_S_Fehler:inst25|f_S_Ueberwachung:inst5|Zustand
+Name Z_f_S_Fehler Z_reset_CNT Z_SZW_high Z_SZW_low Z_start Z_aus 
+Z_aus 0 0 0 0 0 0 
+Z_start 0 0 0 0 1 1 
+Z_SZW_low 0 0 0 1 0 1 
+Z_SZW_high 0 0 1 0 0 1 
+Z_reset_CNT 0 1 0 0 0 1 
+Z_f_S_Fehler 1 0 0 0 0 1 

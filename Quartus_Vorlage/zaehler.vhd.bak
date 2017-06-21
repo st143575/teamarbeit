@@ -1,0 +1,51 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity zaehler is
+	port(
+		clock_divider: in std_ulogic;
+		NANO_LED: out Std_Logic_Vektor(7 downto 0)
+	);
+	
+architecture arch_zaehler of zaehler is
+begin
+	NANO_LED(0) = 1;
+	NANO_LED(1) = 0;
+	NANO_LED(2) = 0;
+	NANO_LED(3) = 0;
+	NANO_LED(4) = 0;
+	NANO_LED(5) = 0;
+	NANO_LED(6) = 0;
+	NANO_LED(7) = 0;
+	process(LED-change) is
+	begin
+		if rising_edge(clock_divider) then
+				case LED_change is
+					when NANO_LED(0) =>
+						NANO_LED(0) = 0;
+						NANO_LED(1) = 1;
+					when NANO_LED(1) =>
+						NANO_LED(1) = 0;
+						NANO_LED(2) = 1;
+					when NANO_LED(2) =>
+						NANO_LED(2) = 0;
+						NANO_LED(3) = 1;
+					when NANO_LED(3) =>
+						NANO_LED(3) = 0;
+						NANO_LED(4) = 1;
+					when NANO_LED(4) =>
+						NANO_LED(4) = 0;
+						NANO_LED(5) = 1;
+					when NANO_LED(5) =>
+						NANO_LED(5) = 0;
+						NANO_LED(6) = 1;
+					when NANO_LED(6) =>
+						NANO_LED(6) = 0;
+						NANO_LED(7) = 1;
+					when NANO_LED(7) =>
+						NANO_LED(7) = 0;
+						NANO_LED(0) = 1;
+				end case;
+		end if;
+	end process;
+end;

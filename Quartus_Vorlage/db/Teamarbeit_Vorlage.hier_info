@@ -1,0 +1,276 @@
+|Teamarbeit_Vorlage
+SZW_1 <= SZW_U.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_50 => PLL_1:inst5.inclk0
+CLOCK_50 => inst11.CLK
+CLOCK_50 => inst8.CLK
+CLOCK_50 => inst9.CLK
+CLOCK_50 => inst10.CLK
+CLOCK_50 => inst12.CLK
+Spezial_I/O_22 => inst11.DATAIN
+Spezial_I/O_7 => inst8.DATAIN
+Spezial_I/O_8 => inst9.DATAIN
+Spezial_IN_9 => inst10.DATAIN
+Spezial_I/O_23 => inst12.DATAIN
+SZW_2 <= <GND>
+SZW_3 <= SZW_V.DB_MAX_OUTPUT_PORT_TYPE
+SZW_4 <= <GND>
+SZW_5 <= SZW_W.DB_MAX_OUTPUT_PORT_TYPE
+SZW_6 <= <GND>
+SZW_7 <= <GND>
+SZW_8 <= <GND>
+SZW_9 <= <GND>
+SZW_10 <= <GND>
+SZW_11 <= <GND>
+SZW_12 <= <GND>
+Nano_LED[0] <= zaehler:inst17.NANO_LED0
+Nano_LED[1] <= zaehler:inst17.NANO_LED1
+Nano_LED[2] <= zaehler:inst17.NANO_LED2
+Nano_LED[3] <= zaehler:inst17.NANO_LED3
+Nano_LED[4] <= zaehler:inst17.NANO_LED4
+Nano_LED[5] <= zaehler:inst17.NANO_LED5
+Nano_LED[6] <= zaehler:inst17.NANO_LED6
+Nano_LED[7] <= zaehler:inst17.NANO_LED7
+Spezial_I/O_24 => ~NO_FANOUT~
+Spezial_I/O_6 => ~NO_FANOUT~
+
+
+|Teamarbeit_Vorlage|f_S_Fehler:inst25
+f_S_Fehler <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+clk => f_S_Ueberwachung:inst5.clk
+clk => f_S_Ueberwachung:inst1.clk
+clk => f_S_Ueberwachung:inst.clk
+reset => f_S_Ueberwachung:inst5.reset
+reset => f_S_Ueberwachung:inst1.reset
+reset => f_S_Ueberwachung:inst.reset
+SZW_V => f_S_Ueberwachung:inst5.SZW
+SZW_V => SZW_V1.DATAIN
+Freigabe => f_S_Ueberwachung:inst5.Freigabe
+Freigabe => f_S_Ueberwachung:inst1.Freigabe
+Freigabe => f_S_Ueberwachung:inst.Freigabe
+SZW_W => f_S_Ueberwachung:inst1.SZW
+SZW_W => SZW_W1.DATAIN
+SZW_U => f_S_Ueberwachung:inst.SZW
+SZW_U => SZW_U1.DATAIN
+SZW_U1 <= SZW_U.DB_MAX_OUTPUT_PORT_TYPE
+SZW_V1 <= SZW_V.DB_MAX_OUTPUT_PORT_TYPE
+SZW_W1 <= SZW_W.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|f_S_Fehler:inst25|f_S_Ueberwachung:inst5
+clk => SZW_DFF.CLK
+clk => Freigabe_DFF.CLK
+clk => f_S_CNT[11].CLK
+clk => f_S_CNT[10].CLK
+clk => f_S_CNT[9].CLK
+clk => f_S_CNT[8].CLK
+clk => f_S_CNT[7].CLK
+clk => f_S_CNT[6].CLK
+clk => f_S_CNT[5].CLK
+clk => f_S_CNT[4].CLK
+clk => f_S_CNT[3].CLK
+clk => f_S_CNT[2].CLK
+clk => f_S_CNT[1].CLK
+clk => f_S_CNT[0].CLK
+clk => Zustand.IN1
+reset => Zustand.IN1
+SZW => SZW_DFF.DATAIN
+Freigabe => Freigabe_DFF.DATAIN
+f_S_Fehler <= Z_f_S_Fehler.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|f_S_Fehler:inst25|f_S_Ueberwachung:inst1
+clk => SZW_DFF.CLK
+clk => Freigabe_DFF.CLK
+clk => f_S_CNT[11].CLK
+clk => f_S_CNT[10].CLK
+clk => f_S_CNT[9].CLK
+clk => f_S_CNT[8].CLK
+clk => f_S_CNT[7].CLK
+clk => f_S_CNT[6].CLK
+clk => f_S_CNT[5].CLK
+clk => f_S_CNT[4].CLK
+clk => f_S_CNT[3].CLK
+clk => f_S_CNT[2].CLK
+clk => f_S_CNT[1].CLK
+clk => f_S_CNT[0].CLK
+clk => Zustand.IN1
+reset => Zustand.IN1
+SZW => SZW_DFF.DATAIN
+Freigabe => Freigabe_DFF.DATAIN
+f_S_Fehler <= Z_f_S_Fehler.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|f_S_Fehler:inst25|f_S_Ueberwachung:inst
+clk => SZW_DFF.CLK
+clk => Freigabe_DFF.CLK
+clk => f_S_CNT[11].CLK
+clk => f_S_CNT[10].CLK
+clk => f_S_CNT[9].CLK
+clk => f_S_CNT[8].CLK
+clk => f_S_CNT[7].CLK
+clk => f_S_CNT[6].CLK
+clk => f_S_CNT[5].CLK
+clk => f_S_CNT[4].CLK
+clk => f_S_CNT[3].CLK
+clk => f_S_CNT[2].CLK
+clk => f_S_CNT[1].CLK
+clk => f_S_CNT[0].CLK
+clk => Zustand.IN1
+reset => Zustand.IN1
+SZW => SZW_DFF.DATAIN
+Freigabe => Freigabe_DFF.DATAIN
+f_S_Fehler <= Z_f_S_Fehler.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|PLL_1:inst5
+areset => altpll:altpll_component.areset
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+locked <= altpll:altpll_component.locked
+
+
+|Teamarbeit_Vorlage|PLL_1:inst5|altpll:altpll_component
+inclk[0] => PLL_1_altpll:auto_generated.inclk[0]
+inclk[1] => PLL_1_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => PLL_1_altpll:auto_generated.areset
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= PLL_1_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|Teamarbeit_Vorlage|PLL_1:inst5|altpll:altpll_component|PLL_1_altpll:auto_generated
+areset => pll_lock_sync.ACLR
+areset => pll1.ARESET
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|zaehler:inst17
+clock_divider => NANO_LED7~reg0.CLK
+clock_divider => NANO_LED6~reg0.CLK
+clock_divider => NANO_LED5~reg0.CLK
+clock_divider => NANO_LED4~reg0.CLK
+clock_divider => NANO_LED3~reg0.CLK
+clock_divider => NANO_LED2~reg0.CLK
+clock_divider => NANO_LED1~reg0.CLK
+clock_divider => NANO_LED0~reg0.CLK
+clock_divider => i[0].CLK
+clock_divider => i[1].CLK
+clock_divider => i[2].CLK
+NANO_LED0 <= NANO_LED0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED1 <= NANO_LED1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED2 <= NANO_LED2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED3 <= NANO_LED3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED4 <= NANO_LED4~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED5 <= NANO_LED5~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED6 <= NANO_LED6~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NANO_LED7 <= NANO_LED7~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|clock_divider:inst
+clock_in => clock_out~reg0.CLK
+clock_in => i[0].CLK
+clock_in => i[1].CLK
+clock_in => i[2].CLK
+clock_in => i[3].CLK
+clock_in => i[4].CLK
+clock_in => i[5].CLK
+clock_in => i[6].CLK
+clock_in => i[7].CLK
+clock_in => i[8].CLK
+clock_in => i[9].CLK
+clock_in => i[10].CLK
+clock_in => i[11].CLK
+clock_in => i[12].CLK
+clock_in => i[13].CLK
+clock_in => i[14].CLK
+clock_in => i[15].CLK
+clock_in => i[16].CLK
+clock_in => i[17].CLK
+clock_in => i[18].CLK
+clock_in => i[19].CLK
+clock_in => i[20].CLK
+clock_in => i[21].CLK
+clock_in => i[22].CLK
+clock_in => i[23].CLK
+clock_in => i[24].CLK
+clock_in => i[25].CLK
+clock_in => i[26].CLK
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Teamarbeit_Vorlage|Fehlerauswertung:inst20
+Freigabe <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Freigabe_Sch => inst6.IN0
+Freigabe_Sch => inst1.IN1
+Fehler_1 => inst4.IN1
+Reset => inst4.IN0
+Reset => inst5.IN0
+Reset => inst3.IN0
+Reset => inst1.IN0
+clk => inst4.CLK
+clk => inst5.CLK
+clk => inst3.CLK
+clk => inst1.CLK
+Fehler_2 => inst5.IN1
+f_S_Fehler => inst3.IN1
+Fehler <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+
+
+T:/Teamarbeit/s-gabriel/Teamarbeit_IEW/TA_ECM_Vorlage/altclklock80.tdf
+
+May 19 03PM:58:50>: Megafunction ALTCLKLOCK is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+T:/Teamarbeit/s-gabriel/Teamarbeit_IEW/TA_ECM_Vorlage/altclklock80.tdf
+
+May 19 03PM:58:57>: Megafunction ALTCLKLOCK is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+T:/Teamarbeit/s-gabriel/Teamarbeit_IEW/TA_ECM_Vorlage/altclklock80.tdf
+
+May 19 03PM:59:05>: Megafunction ALTCLKLOCK is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
