@@ -11,3 +11,5 @@ http://soc.eurecom.fr/EDC/lectures/vhdl/vhdlref.pdf
 http://esd.cs.ucr.edu/labs/tutorial/
 
 https://www.mikrocontroller.net/articles/VHDL
+
+http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
