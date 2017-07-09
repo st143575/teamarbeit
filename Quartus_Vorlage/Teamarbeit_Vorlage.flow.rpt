@@ -1,5 +1,5 @@
 Flow report for Teamarbeit_Vorlage
-Wed Jun 21 17:51:23 2017
+Wed Jul 05 16:41:58 2017
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Full Version
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jun 21 17:51:06 2017       ;
+; Flow Status                        ; Successful - Wed Jul 05 16:41:41 2017       ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Full Version ;
 ; Revision Name                      ; Teamarbeit_Vorlage                          ;
 ; Top-level Entity Name              ; Teamarbeit_Vorlage                          ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 91 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 88 / 22,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 42 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 42                                          ;
+; Total logic elements               ; 3 / 22,320 ( < 1 % )                        ;
+;     Total combinational functions  ; 0 / 22,320 ( 0 % )                          ;
+;     Dedicated logic registers      ; 3 / 22,320 ( < 1 % )                        ;
+; Total registers                    ; 3                                           ;
 ; Total pins                         ; 28 / 154 ( 18 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/21/2017 17:50:15 ;
+; Start date & time ; 07/05/2017 16:40:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Teamarbeit_Vorlage  ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+---------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name   ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+---------------+------------+
-; COMPILER_SIGNATURE_ID               ; 109957577588.149806021507068          ; --            ; --            ; --         ;
+; COMPILER_SIGNATURE_ID               ; 109957577588.149926565210420          ; --            ; --            ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --            ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --            ; --         ;
 ; MISC_FILE                           ; PLL_1.bsf                             ; --            ; --            ; --         ;
@@ -101,11 +101,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 697 MB              ; 00:00:23                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 1527 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:13     ; 1.0                     ; 574 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:15     ; 1.2                     ; 695 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:03     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 696 MB              ; 00:00:25                           ;
+; Fitter                    ; 00:00:15     ; 1.0                     ; 1492 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:13     ; 1.0                     ; 576 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:15     ; 1.0                     ; 687 MB              ; 00:00:02                           ;
+; Total                     ; 00:01:03     ; --                      ; --                  ; 00:00:34                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
