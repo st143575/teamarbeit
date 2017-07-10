@@ -18,4 +18,3 @@ http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
 http://www.lothar-miller.de/s9y/categories/5-Entprellung
 Schieberegister: https://de.wikipedia.org/wiki/Schieberegister#Aufbau_eines_bidirektionalen_Schieberegisters
 Prescaler: https://en.wikipedia.org/wiki/Prescaler
-
