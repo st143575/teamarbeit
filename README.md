@@ -13,3 +13,11 @@ http://esd.cs.ucr.edu/labs/tutorial/
 https://www.mikrocontroller.net/articles/VHDL
 
 http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
+
+# Entprellung
+http://www.lothar-miller.de/s9y/categories/5-Entprellung
+# Schieberegister
+https://de.wikipedia.org/wiki/Schieberegister#Aufbau_eines_bidirektionalen_Schieberegisters
+# Prescaler
+https://en.wikipedia.org/wiki/Prescaler
+
