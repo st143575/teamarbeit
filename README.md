@@ -15,6 +15,7 @@ https://www.mikrocontroller.net/articles/VHDL
 http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
 
 # Entprellung
+Methoden zur Entprellung:
 http://www.lothar-miller.de/s9y/categories/5-Entprellung
 
 Schieberegister:
