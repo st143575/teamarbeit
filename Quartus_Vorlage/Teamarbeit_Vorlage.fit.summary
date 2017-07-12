@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Jul 05 16:41:23 2017
+Fitter Status : Successful - Wed Jul 12 17:20:39 2017
 Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Full Version
 Revision Name : Teamarbeit_Vorlage
 Top-level Entity Name : Teamarbeit_Vorlage
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 3 / 22,320 ( < 1 % )
-    Total combinational functions : 0 / 22,320 ( 0 % )
-    Dedicated logic registers : 3 / 22,320 ( < 1 % )
-Total registers : 3
+Total logic elements : 188 / 22,320 ( < 1 % )
+    Total combinational functions : 170 / 22,320 ( < 1 % )
+    Dedicated logic registers : 102 / 22,320 ( < 1 % )
+Total registers : 102
 Total pins : 28 / 154 ( 18 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -15,7 +15,7 @@ end entity;
 
 architecture arch_stromschaltung of stromschaltung is
 begin
-	process(clock)
+	process (clock)
 		begin
 		if clock = '1' then
 			if (SZW_U1='0' and  SZW_V1='0' and  SZW_W1='1') then
