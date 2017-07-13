@@ -14,6 +14,9 @@ https://www.mikrocontroller.net/articles/VHDL
 
 http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
 
+# Die folgende Folie ist auf Chinesisch
+http://ww1.microchip.com/downloads/cn/AppNotes/00885A_CN.pdf
+
 # Entprellung
 Methoden zur Entprellung:
 http://www.lothar-miller.de/s9y/categories/5-Entprellung
