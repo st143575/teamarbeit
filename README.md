@@ -14,6 +14,9 @@ https://www.mikrocontroller.net/articles/VHDL
 
 http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
 
+std_logic Library
+https://www.cs.sfu.ca/~ggbaker/reference/std_logic/
+
 Die folgende Folie ist auf Chinesisch
 http://ww1.microchip.com/downloads/cn/AppNotes/00885A_CN.pdf
 
