@@ -18,8 +18,7 @@ std_logic Library
 https://www.cs.sfu.ca/~ggbaker/reference/std_logic/
 
 Grundlagen der bürstenlosen Gleichstrommaschine(auf Chinesisch)
-
-无刷直流电机基础 http://ww1.microchip.com/downloads/cn/AppNotes/00885A_CN.pdf
+http://ww1.microchip.com/downloads/cn/AppNotes/00885A_CN.pdf
 
 # Entprellung
 Methoden zur Entprellung:
