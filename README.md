@@ -17,8 +17,8 @@ http://www.kooltek.net/vhdl/zustandsautomaten-in-vhdl
 std_logic Library
 https://www.cs.sfu.ca/~ggbaker/reference/std_logic/
 
-Die folgende Folie ist auf Chinesisch
-http://ww1.microchip.com/downloads/cn/AppNotes/00885A_CN.pdf
+Grundlagen der bürstenlosen Gleichstrommaschine(auf Chinesisch)
+无刷直流电机基础 http://ww1.microchip.com/downloads/cn/AppNotes/00885A_CN.pdf
 
 # Entprellung
 Methoden zur Entprellung:
