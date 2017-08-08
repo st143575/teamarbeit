@@ -36,4 +36,4 @@ https://en.wikipedia.org/wiki/Prescaler
 
 含有控制信号的计数器VHDL设计 http://www.cnblogs.com/kissazi2/p/3175462.html
 
-https://zh.wikipedia.org/wiki/自动机编程
+自动机编程 https://zh.wikipedia.org/wiki/自动机编程
