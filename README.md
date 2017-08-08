@@ -35,3 +35,5 @@ https://en.wikipedia.org/wiki/Prescaler
 计数器的工作原理 http://www.elecfans.com/baike/bandaoti/jichuzhishi/20100308182638.html
 
 含有控制信号的计数器VHDL设计 http://www.cnblogs.com/kissazi2/p/3175462.html
+
+https://zh.wikipedia.org/wiki/自动机编程
